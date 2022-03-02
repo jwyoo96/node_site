@@ -2,7 +2,7 @@
 
 const express = require("express");
 
-const app = require("../app");
+const app = require("../../../src/app");
 const PORT = 3000;
 
 app.listen(PORT, () => {
