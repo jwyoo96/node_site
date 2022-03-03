@@ -11,6 +11,7 @@ function login() {
         id: id.value,
         pw: pw.value,
     };
+    console.log(req.id, req.pw);
 
     fetch("/login", {
         method: "POST",
@@ -28,6 +29,6 @@ function login() {
             }
         })
         .catch((err) => {
-        console.error("로그인 중 에러 발생");
-    });
+            console.error("로그인 중 에러 발생");
+        });
 };
