@@ -1,11 +1,10 @@
 "use strict";
 
-const express = require("express");
-
 const app = require("../app");
-const PORT = 3000;
+const logger = require("../src/config/logger");
+
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log('start server...');
+    logger.info(`${PORT} 포트 서버 가동...`);
 });
-
